@@ -1,0 +1,71 @@
+
+
+    <!----------------------- Main Container -------------------------->
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+        <!----------------------- Login Container -------------------------->
+    
+           <div class="row border rounded-5 p-3 bg-white shadow box-area">
+            
+        <!--------------------------- Left Box ----------------------------->
+    
+           <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #efefef;">
+               <div class="featured-image mb-3">
+                <img src="public/img/logo.png" class="img-fluid" style="width: 250px;">
+               </div>
+               <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;"></p>
+               <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">.</small>
+           </div> 
+    
+        <!-------------------- ------ Right Box ---------------------------->
+            
+           <div class="col-md-6 right-box">
+              <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                         <h2>Đăng kí</h2>
+                    </div>
+                    <div class="input-field">
+                        <label for="text" class="form-label">Họ và tên</label> 
+                        <input type="text" class="form-control" id="name" required="" autocomplete="off" ng-model="user.name">
+                    </div> 
+                    <div class="input-field">
+                        <label for="email" class="form-label">Email</label> 
+                        <input type="text" class="form-control" id="email" required="" autocomplete="off" ng-model="user.email">
+                    </div> 
+                    <div class="input-field">
+                        <label for="pass" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pass" required="" ng-model="user.password">
+                    </div> 
+                    <div class="input-group mb-3 mt-3">
+                        <button type="button" class="btn btn-lg btn-primary w-100 fs-6" ng-click="add_user()">Đăng kí</button>
+                    </div>
+                    <div class="row">
+                        <small>Bạn đã có tài khoản ? <a href="#!login">Đăng nhập</a></small>
+                    </div>
+              </div>
+           </div> 
+    
+          </div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>stt</th>
+                    <th>name</th>
+                    <th>gmail</th>
+                    <th></th>
+                    <th><button ng-click="deleteAlldata()" class="btn btn-danger">Xoá hết</button></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="u in datasuser track by $index">
+                    <td>{{$index+1}}</td>
+                    <td>{{u.name}}</td>
+                    <td>{{u.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+       
+        

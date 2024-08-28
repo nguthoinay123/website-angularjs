@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "name": "Giày nike",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":2,
+        "name": "Giày thể thao",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":3,
+        "name": "Giày nike 2",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":4,
+        "name": "Giày ADIDAS",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":5,
+        "name": "Giày NB",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":6,
+        "name": "Giày Sandal",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+
+
+    {
+        "id":7,
+        "name": "Giày nike 3",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    }, {
+        "id":8,
+        "name": "Giày nike 5",
+        "price": 9000, 
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":9,
+        "name": "Giày nike 4",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    },
+    {
+        "id":10,
+        "name": "Giày nike 6",
+        "price": 9000,
+       "img":"hinh3.jpeg",
+        "date": "2024-02-20"
+    }
+   
+]

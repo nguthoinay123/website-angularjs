@@ -1,0 +1,12 @@
+.myfooter ul li a{
+    text-decoration: none;
+    color: white;
+}
+.myfooter ul{
+    list-style: none;
+
+}
+.myfooter{
+    padding-left: 60px;
+}
+

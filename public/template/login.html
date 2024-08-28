@@ -1,0 +1,60 @@
+
+<form name="myFrm">
+    <!----------------------- Main Container -------------------------->
+
+     <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+    <!----------------------- Login Container -------------------------->
+
+       <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        
+    <!--------------------------- Left Box ----------------------------->
+
+       <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #efefef;">
+           <div class="featured-image mb-3">
+            <img src="public/img/logo.png" class="img-fluid" style="width: 250px;">
+           </div>
+           <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;"></p>
+           <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">.</small>
+       </div> 
+
+    <!-------------------- ------ Right Box ---------------------------->
+     
+       <div class="col-md-6 right-box" >
+          <div class="row align-items-center">
+                <div class="header-text mb-4">
+                     <h2>Đăng nhập</h2>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email"  class="form-control form-control-lg bg-light fs-6"  name="email"  ng-model="email"  placeholder="Email" >
+                    <label class="text-danger" ng-show="myFrm.email.$invalid && myFrm.email.$dirty">Email không hợp lệ</label>
+                </div>
+                <div class="input-group mb-1">
+                    <input type="password"  class="form-control form-control-lg bg-light fs-6" name="password" placeholder="Password"   ng-model="password" >
+                    <label class="text-danger" ng-show="myFrm.password.$invalid && myFrm.password.$touched">Vui lòng nhập mật khẩu</label>
+
+                </div>
+                <div class="input-group mb-5 d-flex justify-content-between">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheck">
+                        <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+                    </div>
+                    <div class="forgot">
+                        <small><a href="#">Quên mật khẩu?</a></small>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-lg btn-primary w-100 fs-6" ng-click="login()">Đăng nhập</button>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-lg btn-light w-100 fs-6"><img src="#" style="width:20px" class="me-2"><small>Đăng nhập với Google</small></button>
+                </div>
+                <div class="row">
+                    <small>Bạn chưa có tài khoản? <a href="#!sigup">Đăng kí</a></small>
+                </div>
+          </div>
+       </div> 
+      </div>
+      
+    </div>
+</form>
